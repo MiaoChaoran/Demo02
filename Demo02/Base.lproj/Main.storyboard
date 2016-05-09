@@ -145,9 +145,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e3U-Mz-p4F">
-                                <rect key="frame" x="20" y="122" width="106" height="99"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ixo-ka-lib">
                                 <rect key="frame" x="194" y="122" width="106" height="99"/>
                             </imageView>
@@ -199,15 +196,25 @@
                                     <segue destination="8Ng-XX-FvM" kind="modal" id="5B4-8B-t7m"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" highlightedImage="/Users/a20131105796/Desktop/01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e3U-Mz-p4F">
+                                <rect key="frame" x="20" y="122" width="106" height="99"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="image01" destination="e3U-Mz-p4F" id="REm-Rx-O3G"/>
+                        <outlet property="setupTimeLabel" destination="Pge-SV-PzD" id="P2g-0q-19l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="162" y="396"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="/Users/a20131105796/Desktop/01.jpg" width="16" height="16"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="5B4-8B-t7m"/>
         <segue reference="MKb-zn-oJR"/>
